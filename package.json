@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "sass src/sass:public/css",
+    "css-watch": "sass --watch src/sass:public/css",
+    "dev-server": "web-dev-server --node-resolve --open --watch",
+    "build": "npm run css-build",
+    "start": "npm run dev-server & css-watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@web/dev-server": "^0.4.0",
+    "sass": "^1.69.5"
+  }
+}
