@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "css-build": "sass src/sass:public/css",
     "css-watch": "sass --watch src/sass:public/css",
-    "dev-server": "web-dev-server --node-resolve --open --watch",
+    "dev-server": "web-dev-server --node-resolve --open --watch --root-dir ./public",
     "build": "npm run css-build",
     "start": "npm run dev-server & css-watch"
   },
